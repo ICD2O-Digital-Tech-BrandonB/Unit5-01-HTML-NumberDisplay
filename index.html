@@ -1,9 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+
+      <!--Meta Data-->
+      <meta charset="utf-8">
+      <meta name="description" content="Number Counter">
+      <meta name="keyboard" content="immaculata, icd2o">
+      <meta name="author" content="BrandonBCode">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Allows the Use of Favicons-->
+      <link rel="apple-touch-icon" sizes="180x180" href="./favicon5011/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./favicon5011/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./favicon5011/favicon-16x16.png">
+      <link rel="manifest" href="./favicon5011/site.webmanifest">
+
+      <!--Google's MDL Crucial Code-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"> 
+
+      <!--Links CSS to HTML-->
+      <link rel="stylesheet" href="./css/style.css">
+
+    <title>Number Counter</title>
   </head>
   <body>
-    <p>Paragraph</p>
+
+    <!--MDL Crucial Code-->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!--Links JS to HTML-->
+    <script src="./js/script.js"></script>
+
+    <h1>Number Display!</h1>
+
+    <!--Allows you to use an image on HTML-->
+    <img src="./images/number.jpg" alt="Numbers" class="center" >
+
+    <h2>Please Enter the Following</h2>
+
+    <!--Information for Function-->
+      <form action="javascript:intakeNumber()">
+        <label for="minNumber">Enter Your Minimum Number!</label>
+        <input type="number" id="minNumber" step="1" placeholder="Minimum Value"><br><br>
+        <label for="maxNumber">Enter Your Maximum Number!</label>
+        <input type="number" id="maxNumber" step="1" placeholder="Maximum Value"><br><br>
+
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="intakeAge()"> Start Counting  
+        </button>
+        <br/>
+      </form>
+    </p>
+
+    <!--Location for where to display the message-->
+    <div id="outputNumber"></div>
+    <br>
   </body>
 </html>
